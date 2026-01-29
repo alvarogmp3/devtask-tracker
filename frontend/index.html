@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevTask Tracker - Monolito Artesanal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>DevTask Tracker</h1>
+        <p>Gestión de Tareas para Desarrolladores</p>
+    </header>
+    
+    <main>
+        <section id="form-container">
+            <h2>Registrar Nueva Tarea</h2>
+            <form id="task-form">
+                <input type="text" id="titulo" placeholder="Título de la tarea (ej: Configurar API)" required>
+                <select id="tecnologia">
+                    <option value="JS">JavaScript</option>
+                    <option value="Java">Java</option>
+                    <option value="Python">Python</option>
+                </select>
+                <button type="submit">Guardar Tarea</button>
+            </form>
+        </section>
+
+        <section id="list-container">
+            <h2>Tareas Pendientes</h2>
+            <div id="tareas-grid">
+                </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
